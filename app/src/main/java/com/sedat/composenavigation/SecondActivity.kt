@@ -110,7 +110,7 @@ object ComposableAnimExtension{
     val defaultExitTransition = slideOutHorizontally(
         targetOffsetX = {5000},
         animationSpec = tween(durationMillis = 3000, easing = FastOutSlowInEasing)
-    ) + fadeOut(animationSpec = tween(3000))
+    ) + fadeOut(animationSpec = tween(3000)) //çıkış animasyonunu daha yumuşak yapar, çıkarken ekran transparan olarak çıkar.
 
     val defaultPopEnterTransition = slideInHorizontally(
         initialOffsetX = {-5000}, //yeni ekranın ekranı kaplama hızı (-+ değere göre ekranın sağından ya da solundan animasyon başlar)
